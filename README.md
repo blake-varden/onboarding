@@ -52,7 +52,7 @@ catkin_make
 
 popd
 
-echo 'source ${ROS_ENV_DIR}/catkin_ws/devel/setup.bash' >> ~/.bashrc
+echo "source ${ROS_ENV_DIR}/catkin_ws/devel/setup.bash" >> ~/.bashrc
 ```
 
 
