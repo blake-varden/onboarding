@@ -43,7 +43,9 @@ catkin_init_workspace
 
 pip install catkin_pkg
 
-make
+pushd ~/ROSEnvs/catkin_ws
+
+catkin_make
 
 popd
 ```
