@@ -35,7 +35,7 @@ sudo apt-get install python-rosinstall
 ### Setup Environment
 
 ```bash
-mkdir -p ~/ROSEnvs/catkin_ws
+mkdir -p ~/ROSEnvs/catkin_ws/src
 
 pushd  ~/ROSEnvs/catkin_ws/src
 
