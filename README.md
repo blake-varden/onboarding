@@ -55,6 +55,20 @@ popd
 echo "source ${ROS_ENV_DIR}/catkin_ws/devel/setup.bash" >> ~/.bashrc
 
 ```
+
+## Download CAN libraries
+
+Go to https://www.kvaser.com/linux-drivers-and-sdk/ and click the download libraries on the right side. Extract the contents.
+
+```
+pushd linuxcan
+
+make
+
+sudo make install
+
+popd
+```
 ## Build Projects
 
 ```
