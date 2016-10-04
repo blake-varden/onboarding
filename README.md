@@ -37,13 +37,15 @@ sudo apt-get install python-rosinstall
 ```bash
 mkdir -p ~/ROSEnvs/catkin_ws
 
-cd ~/catkin_ws/src
+pushd  ~/ROSEnvs/catkin_ws/src
 
 catkin_init_workspace
 
 pip install catkin_pkg
 
 make
+
+popd
 ```
 
 
