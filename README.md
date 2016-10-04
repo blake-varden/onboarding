@@ -35,19 +35,24 @@ sudo apt-get install python-rosinstall
 ### Setup Environment
 
 ```bash
-mkdir -p ~/ROSEnvs/catkin_ws/src
 
-pushd  ~/ROSEnvs/catkin_ws/src
+export ROS_ENV_DIR=~/ROSEnvs
+
+mkdir -p ${ROS_ENV_DIR}/catkin_ws/src
+
+pushd  ${ROS_ENV_DIR}/catkin_ws/src
 
 catkin_init_workspace
 
 pip install catkin_pkg
 
-pushd ~/ROSEnvs/catkin_ws
+pushd ${ROS_ENV_DIR}/catkin_ws
 
 catkin_make
 
 popd
+
+echo 'source ${ROS_ENV_DIR}/catkin/devel/setup.bash` >> ~/.bashrc
 ```
 
 
