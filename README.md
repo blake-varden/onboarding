@@ -53,8 +53,26 @@ catkin_make
 popd
 
 echo "source ${ROS_ENV_DIR}/catkin_ws/devel/setup.bash" >> ~/.bashrc
-```
 
+```
+## Build Projects
+
+```
+pushd  ${ROS_ENV_DIR}/catkin_ws/src
+
+git clone git@github.com:vardenlabs/roscan.git
+
+git clone git@github.com:vardenlabs/roscpplint.git
+
+popd
+
+pushd  ${ROS_ENV_DIR}/catkin_ws/
+
+pip install empy
+
+catkin_make
+
+```
 
 
 
